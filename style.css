@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  height: 100px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcd8d8;
+  width: 100%;
+}
+.myntra_home{
+  height: 110px;
+  transition:transform .3s ease;
+
+}
+.myntra_home:hover{
+  transform: scale(1.1);
+}
+.logo_container{
+  margin-left: 3.5%;
+}
+.action_bar{
+  margin-right: 4%;
+}
+.nav_bar{
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+}
+.nav_bar a{
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #282c3f;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 39px 0;
+  border-bottom: 4px solid #ffffff;
+}
+.nav_bar a:hover{
+  border-bottom: 4px solid #f54e77;
+  
+}
+.search_bar{
+  height: 40px;
+  min-width: 400px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.search_icon{
+ box-sizing: content-box;
+ height: 20px ;
+ padding: 10px;
+ background-color: #f5f5f6;
+ color: #282c3f;
+ font-weight: 300;
+ border-radius: 3px 0 0 3px;
+}
+.search_input{
+ color: #696e79;
+ background-color: #f5f5f6;
+ flex-grow: 1;
+ height: 40px;
+ border-radius: 0 3px 3px 0;
+ border: none;
+}
+.action_bar{
+  display: flex;
+  min-width: 200px;
+  justify-content: space-around;
+  gap: 40px;
+}
+.action_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action_name{
+  font-size: 12px;
+  color: #000000;
+}
+/* main section */
+.container_banner{
+  margin: 40px 0;
+}
+.banner_image{
+  width: 100%;
+}
+
+
+.category_heading{
+ text-transform: uppercase;
+ color: #3e4152;
+ letter-spacing: .15em;
+ font-size: 1.8em;
+ margin: 50px 0 10px 30px;
+ max-height: 5em;
+ font-weight: 700;
+}
+
+.category_items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.sale_item{
+  width: 250px;
+}
+/* FOOTER */
+.footer_container{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fafbfc;
+  padding: 30px 0 40px 0;
+
+}
+
+.footer_column{
+  display: flex;
+  flex-direction: column;
+}
+.footer_column a{
+  color: #696b79;
+  font-size: 15px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+}
+.footer_column h3{
+  color: #282c3f;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 3px solid #f54e77;
+  padding-bottom: 5px;
+}
+.footer_column h3:hover{
+  color: #f54e77;
+}
+.contact{
+  line-height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  align-items: center;
+}
+.contact a{
+ color: #282c3f ;
+}
+.contact :hover{
+  color: #f54e77;
+}
+.contact .contact_us{
+  color: #f54e77;
+}
+.footer_logo{
+  height: 80px;
+}
+.menu-btn{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media only screen and (max-width:850px){
+  .container_banner{
+    margin: 25px 0;
+  }
+  .myntra_home{
+    height: 50px;
+  }  
+  .menu-btn{
+    display: block;
+  }
+
+  header{
+    width: 100%;
+    height: 75px;
+    background-color: #e9e7e7;
+  }
+
+  .search_bar{
+    display: none;
+  }
+
+  .action_bar{
+    display: none;
+  }
+
+  .nav_bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a81036;;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin-top: -2000px;
+    transition: all .5s ease;
+  }
+  .mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+
+  .nav_bar a{
+    border-bottom: none;
+    margin: 5px auto;
+    color: #110f0f;
+  }
+
+  .myntra_home{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: 1;
+    height: 75px;
+  }
+
+  .nav_bar a:hover{
+    border-bottom: none;
+  }
+
+  .contact{
+    margin-top: 15px;
+    flex-direction: column;
+    
+  }
+
+  .sale_item{
+    width: 100px;
+  }
+
+  .category_heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1em;
+    margin: 30px 0 5px 15px;
+    max-height: 5em;
+    font-weight: 700;
+   }
+   .footer_column h3{
+    font-size: 13px;
+   }
+   .footer_column a{
+    font-size: 13px;
+   }
+   
+}
